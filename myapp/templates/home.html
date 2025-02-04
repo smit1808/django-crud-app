@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Django App</title>
+</head>
+<body>
+    <h1>Welcome to My Django App!</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.title }} - {% if task.completed %}Completed{% else %}Not Completed{% endif %}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
